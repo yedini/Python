@@ -1,0 +1,61 @@
+Microsoft Windows [Version 10.0.17134.472]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Users\dcng>python
+Python 3.7.0 (default, Jun 28 2018, 08:04:48) [MSC v.1912 64 bit (AMD64)] :: Anaconda, Inc. on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> a=1
+>>> b=1
+>>> type(a)
+<class 'int'>
+>>> type(b)
+<class 'int'>
+>>> os.system("cls")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'os' is not defined
+>>> a=1.5
+>>> b=3.5
+>>> print(a,b)
+1.5 3.5
+>>> type(a)
+<class 'float'>
+>>> type(b)
+<class 'float'>
+>>> a="ABC"
+>>> b="101010"
+>>> print(a,b)
+ABC 101010
+>>> type(a)
+<class 'str'>
+>>> type(b)
+<class 'str'>
+>>> a=True
+>>> b=False
+>>> print(a,b)
+True False
+>>> type(a)
+<class 'bool'>
+>>> a=3
+>>> b=5
+>>> a ** b
+243
+>>> a=7
+>>> b=2
+>>> a/b
+3.5
+>>> a % b
+1
+>>> a=1
+>>> a= a+1
+>>> a
+2
+>>> a  #a 출력하기
+2
+>>> a +=1
+>>> a
+3
+>>> a -=1
+>>> a
+2
+>>> exit()
