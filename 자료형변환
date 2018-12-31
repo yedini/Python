@@ -1,0 +1,39 @@
+Microsoft Windows [Version 10.0.17134.472]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Users\dcng>python
+Python 3.7.0 (default, Jun 28 2018, 08:04:48) [MSC v.1912 64 bit (AMD64)] :: Anaconda, Inc. on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> a=10
+>>> type(a)
+<class 'int'>
+>>> a=10.0
+>>> type(a)
+<class 'float'>
+>>> a=int(a)
+>>> a
+10
+>>> a=10.3
+>>> b=10.7
+>>> int(a)+int(b)
+20
+>>> a="76.3"
+>>> b=float(a)
+>>> type(a)
+<class 'str'>
+>>> type(b)
+<class 'float'>
+>>> a+b
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: can only concatenate str (not "float") to str
+>>> float(a)+b
+152.6
+>>> int(float(a))
+76
+>>> a+str(b)
+'76.376.3'
+>>> a=11
+>>> b=9
+>>> print('a'+'b')
+ab
