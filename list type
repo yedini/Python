@@ -1,0 +1,117 @@
+Microsoft Windows [Version 10.0.17134.472]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Users\dcng>python
+Python 3.7.0 (default, Jun 28 2018, 08:04:48) [MSC v.1912 64 bit (AMD64)] :: Anaconda, Inc. on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> colors=["red", "blue", "green"]
+>>> colors[0]
+'red'
+>>> colors[1]
+'blue'
+>>> len(color
+... s)
+  File "<stdin>", line 2
+    s)
+    ^
+SyntaxError: invalid syntax
+>>> cities = ['서울', '부산', '대구', '광주', '인천', '대전', '울산', '동탄']
+>>> cities[0:6]
+['서울', '부산', '대구', '광주', '인천', '대전']
+>>> cities[5:]
+['대전', '울산', '동탄']
+>>> cities[::2]
+['서울', '대구', '인천', '울산']
+>>> cities[::-1]
+['동탄', '울산', '대전', '인천', '광주', '대구', '부산', '서울']
+>>> color=['red', 'blue', 'green']
+>>> color2=['orange', 'black', 'white']
+>>> color+color2
+['red', 'blue', 'green', 'orange', 'black', 'white']
+>>> len(color)
+3
+>>> len(color+color2)
+6
+>>> color[0]="yellow"
+>>> color
+['yellow', 'blue', 'green']
+>>> color * color2
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: can't multiply sequence by non-int of type 'list'
+>>> "red" in color
+False
+>>> total_color=color+color+2
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: can only concatenate list (not "int") to list
+>>> total_color=color+color2
+>>> total_color
+['yellow', 'blue', 'green', 'orange', 'black', 'white']
+>>> color.append("red")
+>>> color
+['yellow', 'blue', 'green', 'red']
+>>> color.extend(color2)
+>>> color
+['yellow', 'blue', 'green', 'red', 'orange', 'black', 'white']
+>>> color.insert(0, "yedini")
+>>> color
+['yedini', 'yellow', 'blue', 'green', 'red', 'orange', 'black', 'white']
+>>> del color[0]
+>>> color
+['yellow', 'blue', 'green', 'red', 'orange', 'black', 'white']
+>>> color.remove("red")
+>>> color
+['yellow', 'blue', 'green', 'orange', 'black', 'white']
+>>>
+>>>
+>>> a=5
+>>> type(a)
+<class 'int'>
+>>> b=['color', 1.0, 2]
+>>> type(b)
+<class 'list'>
+>>>
+>>> a=[5,4,3,2,1]
+>>> b=[1,2,3,4,5]
+>>> 1==1
+True
+>>> c=300
+>>> d=300
+>>> c==d
+True
+>>> c is d   ###메모리 주소가 다르므로 False가 나온다!!
+False
+>>> a==b
+False
+>>> b=a
+>>> a
+[5, 4, 3, 2, 1]
+>>> b
+[5, 4, 3, 2, 1]
+>>> a.sort()
+>>> a
+[1, 2, 3, 4, 5]
+>>> b     ### b에 a를 할당해서 같은 메모리주소 가지고 있으므로 b도 sorting됨
+[1, 2, 3, 4, 5]
+>>>
+>>>
+>>> t=[1,2,3]
+>>> a,b,c=t
+>>> a
+1
+>>> b
+2
+>>> c
+3
+>>>
+>>>
+>>> kor_score=[20,57,36,63]
+>>> kor=[20,57,36,63]
+>>> math=[43,78,38,45]
+>>> eng=[34,86,32,34]
+>>> midterm=[kor, math, eng]
+>>> midterm
+[[20, 57, 36, 63], [43, 78, 38, 45], [34, 86, 32, 34]]
+>>> midterm[1][3]
+45
