@@ -86,3 +86,20 @@ data_result.head()
 #의미없는 칼럼 삭제
 data_result.drop(['2013년도 이전', '2014년','2015년','2016년'], 
                  axis=1, inplace=True)
+
+##데이터프레임 병합: merge함수
+#   공통 열/인덱스 기준으로 두 개의 테이블을 합침.(on인자)
+# cctv와 population 데이터를 구별 기준으로 합치기
+data_result=pd.merge(cctv_seoul, pop_seoul, on="구별")
+data_result.head()
+#의미없는 칼럼 삭제
+data_result.drop(['2013년도 이전', '2014년','2015년','2016년'], 
+                 axis=1, inplace=True)
+
+
+
+##데이터프레임 인덱스 설정
+#  set_index: 기존 행 인덱스 제거하고 column중 하나를 인덱스로 설정.
+#  reset_indx: 기존 행 인덱스 제거하고 인덱스를 마지막 column으로 추가.
+data_result.set_index("구별", inplace=True)
+data_result.head()
